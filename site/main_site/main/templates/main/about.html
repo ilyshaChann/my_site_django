@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Poppins&family=Roboto&display=swap&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title>Обо мне</title>
+</head>
+<body>
+<img class="png" src="{% static 'main/img/i_am.png' %}">
+<img class="png_1" src="{% static 'main/img/Tik-tik.png' %}">
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logotip">
+                <a class="logo" href="{% url 'about' %}">Мой профиль</a>
+            </div>
+        </div>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li>
+                    <a href="{% url 'news' %}">Новости</a>
+                </li>
+                <li>
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Домашняя страница</a>
+                </li>
+            </ul>
+        </div>
+</header>
+<section class="section">
+<img class="jpg" src="{% static 'main/img/blue_background.jpg' %}">
+    <div class="other_text">
+        <h1>Меня зовут - Илья Чесноков </h1>
+        <h2>Я начинающий Python разработчик. На данной странице я предоставлю базовую инфорсмацию о себе!</h2>
+    <img class="png_3" src="{% static 'main/img/black_line.png' %}">
+    </div>
+    <div class="other_items">
+        <div class="other_items_1">
+            <h1>1</h1>
+            <h2>Мне 16 лет, учусь в школе, увлекаюсь программированием!
+                С конца 2021-го года начал узучать язык программирования - Python. Спустя некоторое время приступил к написанию своих простеньких программ!</h2>
+        </div>
+        <div class="other_items_2">
+            <h1>2</h1>
+            <h2>Одними из первых моих мини-проектов были - <a class="btn_3" href="https://github.com/ilyshaChann/telegram_bot">"Телеграм бот"</a>, <a class="btn_4" href="https://github.com/ilyshaChann/voice_assistent">"Голосовой помощник"</a> и <a class="btn_5" href="https://github.com/ilyshaChann">др</a>.
+                Впоследствии я старался совершенстоваться и начал еще глубже уходить в изучение Python'а!</h2>
+        </div>
+        <div class="other_items_3">
+            <h1>3</h1>
+            <h2>По прошествии еще некоторого времени меня заинтересовало создание веб-сайтов. Так,
+                наткнувшись на веб-фреймворк - Django, я приступил к знакомству с ним и уже вскоре постарался написать свой простенький веб-сайт, страницу которого вы сейчас читаете!</h2>
+        <img class="png_2" src="{% static 'main/img/black_line.png' %}">
+        </div>
+        <div class="other_text_1">
+            <h1>Но на этом мое путeшествие в мире IT только начинается,
+                я буду стараться развиваться, развивать свои знания, улучшать качество написанного мною кода и всегда стремиться к лучшему!</h1>
+        </div>
+        <div class="other_text_2">
+            <div class="other_text_one">
+                <h1>Также у меня есть страничка на github, туда я стараюсь публиковать исходный код проектов!</h1>
+                <a class="btn_1" href="https://github.com/ilyshaChann">Github!</a>
+            </div>
+            <div class="other_text_two">
+                <h1>Ну и в заключение хотелось бы добавить, что, если вас хоть чуть-чуть заинтерсовало то, что я делаю, вы можете сделить за новостями и не пропускать
+                    каких-либо новых проектов в моем исполнении!</h1>
+                <a class="btn_2" href="{% url 'news' %}">Новости!</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

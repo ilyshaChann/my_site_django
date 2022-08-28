@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/contacts.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <title>Контакты</title>
+</head>
+<body>
+<img class="png" src="{% static 'main/img/Tik-tik.png' %}">
+<img class="jpg" src="{% static 'main/img/picture.jpg' %}" alt="hello">
+<img class="jpg_2" src="{% static 'main/img/picture_2.jpg' %}" alt="hello">
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logotip">
+                <a class="logo" href="#">Мой профиль</a>
+            </div>
+        </div>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li>
+                    <a href="{% url 'news' %}">Новости</a>
+                </li>
+                <li>
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Домашняя страница</a>
+                </li>
+            </ul>
+        </div>
+    <div class="text">
+        <h1>Связаться со мной - </h1>
+    </div>
+    <div class="double">
+        <a href="https://vk.com/ilusha.chaan"><img class="png_2" src="{% static 'main/img/logo_vk.png' %}"></a>
+        <a href="https://t.me/ilusha_chann"><img class="png_3" src="{% static 'main/img/logo_telega.png' %}"></a>
+        <div class="double_one">
+            <h1>вконтакте</h1>
+            <h2>Так вы сможете поддерживать связь со мной благодаря ВКонтакте!</h2>
+            <a class="btn_1" href="https://vk.com/ilusha.chaan">Напиши мне!</a>
+        </div>
+        <div class="double_two">
+            <h1>Telegram</h1>
+            <h2>Телеграм поможет нам не потерять друг друга!</h2>
+            <a class="btn_2" href="https://t.me/ilusha_chann">Связаться со мной!</a>
+        </div>
+    </div>
+</header>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    color: #fff;
+}
+.header {
+    height: 140px;
+    background: #071555;
+    box-shadow: 10px -3.5px 10px 10px #4263f5;
+}
+/* end */
+/* также настройки */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* просто общие настройки */
+ul, li {
+    display: block;
+    padding:0;
+    margin:0;
+}
+/* end */
+/* корректировка выравнивания шапки */
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    padding-top:50px;
+    letter-spacing: 0.3px;
+}
+/* конец здесь */
+/* корректировка самой шапки */
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style-type: none;
+    margin-right: 40px;
+    transition: all .15s ease;
+}
+.menu li:hover {
+    transform: scale(1.05);
+}
+.menu li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+}
+header a {
+    color: #fff;
+}
+/* где-то здесь конец */
+/* логотип, э-кей, Мой профиль */
+.logotip {
+    text-decoration:none;
+    font-size:30px;
+    margin-right:490px;
+    margin-left:60px;
+    transition: all .15s ease;
+}
+.logo {
+    text-decoration:none;
+}
+.logotip:hover {
+    transform: scale(0.97);
+}
+
+
+.png_1 {
+    width: 106px;
+    height: 48px;
+    position: absolute;
+    right: 315px;
+    margin-top:95px;
+}
+
+.basic_info {
+    color: black;
+    background-color: rgba(165, 210, 255, .4);
+    background-image:
+    linear-gradient(90deg, rgba(165, 210, 255, .3) 50%, transparent 50%),
+    linear-gradient(rgba(165, 210, 255, .3) 50%, transparent 50%);
+    background-size: 40px 40px;
+    width: 800px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.btn {
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient( 109.6deg, rgba(110,123,251,1) 11.2%, rgba(156,252,248,1)  91.1% );
+    border-radius: 30px;
+    padding: 15px;
+    transition: all .32s ease;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, black 0px 0px 0px 2px;
+}
+
+.btn:hover {
+    transform: scale(0.97);
+}
+
+.basic_title {
+    text-align: center;
+    box-shadow: 0px 5px 0px rgb(204, 204, 204);
+}
+.basic_anons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+
+.search {
+    text-align: right;
+    margin-left: 30px;
+
+}
+
+.search_input {
+    padding: 7px;
+    border-radius:20px;
+    padding-right:22px;
+}
+
+.button {
+    position:absolute;
+    right: 130px;
+    margin-top: 6px;
+}
+
+.png {
+    position: absolute;
+    height:70%;
+    right:100px;
+    margin-top:100px;
+}
+
+.jpg {
+    position:absolute;
+    border-radius:255px 0px 0px 0px;
+    right:0px;
+    margin-top: 140px;
+    width: 350px;
+    height: 115%;
+    float:right;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 14px, rgb(0, 212, 255) 0px 0px 0px 3px;
+}
+
+.i_am {
+    position:absolute;
+    right: 95px;
+    width: 320px;
+    height: 320px;
+    margin-top: 280px;
+    border-radius: 170px;
+    box-shadow: -10px 8px 0px rgb(196 181 253);
+}
+
+
+.no_records {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 5px 0px rgb(204, 204, 204);
+    width: 700px;
+    margin-left: 350px;
+    font-family: 'Comfortaa', cursive;
+}

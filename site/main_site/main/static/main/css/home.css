@@ -1,0 +1,319 @@
+/* начальная часть/настройки */
+body {
+    padding: 0;
+    margin: 0;
+    height: 700px;
+    background: #071555;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+.header {
+    height: 780px;
+}
+/* end */
+/* также настройки */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* просто общие настройки */
+ul, li {
+    display: block;
+    padding:0;
+    margin:0;
+}
+/* end */
+/* корректировка выравнивания шапки */
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    padding-top:50px;
+    letter-spacing: 0.3px;
+}
+/* конец здесь */
+/* корректировка самой шапки */
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style-type: none;
+    margin-right: 40px;
+    transition: all .15s ease;
+}
+.menu li:hover {
+    transform: scale(1.05);
+}
+.menu li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+}
+header a {
+    color: #fff;
+}
+/* где-то здесь конец */
+/* логотип, э-кей, Мой профиль */
+.logotip {
+    text-decoration:none;
+    font-size:30px;
+    margin-right:490px;
+    margin-left:60px;
+    transition: all .15s ease;
+}
+.logo {
+    text-decoration:none;
+}
+.logotip:hover {
+    transform: scale(0.97);
+}
+/* так-же до сюда */
+/*Объект  поиска:*/
+.search {
+    width:150px;
+    border-radius:30px;
+    height:25px;
+    transition: all .15s ease;
+    padding-left:45px;
+}
+.search:hover {
+    transform: scale(0.98);
+}
+.png_search {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right:205px;
+    margin-top: 4px;
+}
+input {
+    font-size:18px;
+    padding:2px 20px;
+}
+form {
+    margin-left: auto;
+}
+/*до этого момента примерно*/
+/* Начало основной информации страницы */
+.other_text {
+    margin-top: 125px;
+    margin-left: 78px;
+    max-width: 557px;
+}
+.other_text h1 {
+    font-family: 'Manrope';
+    font-size: 70px;
+    margin-bottom: 25px;
+    letter-spacing: 0.3px;
+}
+.other_text h2 {
+    font-size: 16px;
+    font-family: 'Manrope';
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+.btn {
+    font-family: 'Manrope';
+    display: block;
+    font-size:16px;
+    width: 91px;
+    height: 20px;
+    line-height: 22px;
+    border-radius: 25px;
+    padding:17px 47px;
+    background: linear-gradient(#5C80FF, #1A52E4);
+    margin-top: 30px;
+    text-decoration:none;
+    transition: all .22s ease;
+}
+.btn:hover {
+    transform: scale(0.97)
+
+}
+/* конец основноого содержимого страницы */
+/* картинка левой части страницы */
+.img {
+    width: 617px;
+    height: 480px;
+    position: absolute;
+    right: 40px;
+    margin-top: 130px;
+    border-radius: 30px;
+    box-shadow: 7px -8px 8px 2px #3145f79b;
+}
+/* end */
+/* небольшая часть декора */
+.png {
+    width: 106px;
+    height: 68px;
+    position: absolute;
+    right: 195px;
+    margin-top: 75px;
+}
+/* end */
+/* начало 2-й части страницы */
+.section {
+    height: 1030px;
+    background: #fff;
+}
+.basic_text {
+    width: 480px;
+    height: 420px;
+    margin-top: 224px;
+    margin-left: 68px;
+}
+.basic_text h1 {
+    font-size: 55px;
+    color: black;
+    letter-spacing: 0.5px;
+    line-height: 65px;
+}
+.basic_text h2 {
+    color: #888484;
+    font-size: 16px;
+    margin-top: 32px;
+}
+.btn_2 {
+    font-family: 'Manrope';
+    display: block;
+    font-size:16px;
+    width: 75px;
+    height: 20px;
+    line-height: 22px;
+    border-radius: 25px;
+    padding:17px 47px;
+    background: linear-gradient(#1A52E4, #5C80FF);
+    margin-top: 30px;
+    text-decoration:none;
+    color: #fff;
+    transition: all .22s ease;
+    margin-top: 32px;
+}
+.btn_2:hover {
+    transform: scale(0.97);
+}
+/* конец текстовой части 2-й страницы */
+/* начало визуальной части 2-й страницы */
+.minor_part_one {
+    font-size:20px;
+    color: black;
+    display: flex;
+    width: 318px;
+    height: 275pxpx;
+    position: absolute;
+    right: 404px;
+    margin-top: -525px;
+
+}
+.minor_part_one h1 {
+    font-family: 'Manrope';
+    margin-right:50px;
+}
+.minor_part_two {
+    color:black;
+}
+.minor_part_one h2 {
+    font-family: 'Manrope';
+    font-size: 12px;
+    color: #808080;
+}
+.minor_part_1 {
+    margin-right:80px;
+    width:200px;
+    padding: 25px;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px -1.8px 0px 0px #ffcffd;
+}
+.minor_part_2 {
+    margin-right:80px;
+    width:210px;
+    padding: 25px;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px -1.8px 0px 0px #b3d9fc;
+}
+.minor_part_two {
+    font-size:20px;
+    color: black;
+    display: flex;
+    width: 318px;
+    height: 275pxpx;
+    position: absolute;
+    right: 404px;
+    margin-top: -185px;
+}
+.minor_part_two h1 {
+    font-family: 'Manrope';
+    margin-right:50px;
+}
+.minor_part_two h2 {
+    font-family: 'Manrope';
+    font-size: 12px;
+    color: #808080;
+}
+.minor_part_3 {
+    margin-right:80px;
+    width: 193px;
+    padding: 25px;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px -1.8px 0px 0px #1A52E4;
+}
+.minor_part_4 {
+    margin-right:80px;
+    width:210px;
+    padding: 25px;
+    padding-top: 65px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0px -1.8px 0px 0px #ff954a;
+}
+.png_1 {
+    width: 105px;
+    height: 131px;
+    position: absolute;
+    right: 98px;
+    margin-top:875px;
+}
+.png_2 {
+    width: 105px;
+    height: 131px;
+    position:absolute;
+    right:660px;
+    margin-top:1586px;
+}
+.png_3 {
+    width:38px;
+    height:30px;
+    position:absolute;
+    right:332px;
+    margin-top: 195px;
+}
+.png_4 {
+    width:38px;
+    height:30px;
+    position:absolute;
+    right:658px;
+    margin-top: 195px;
+}
+.png_5 {
+    width:38px;
+    height:30px;
+    position:absolute;
+    right:658px;
+    margin-top:535px;
+}
+.png_6 {
+    width:38px;
+    height:30px;
+    position:absolute;
+    right:332px;
+    margin-top:535px;
+}
+/* конец визуальной части 2-й страницы и в принципе конец домашней страницы) */
+
+

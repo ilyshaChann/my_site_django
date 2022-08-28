@@ -1,0 +1,225 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 775px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+    color:#fff;
+}
+.header {
+    height: 140px;
+    background: #071555;
+    box-shadow: 10px -3.5px 10px 10px #4263f5;
+}
+/* end */
+/* также настройки */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* просто общие настройки */
+ul, li {
+    display: block;
+    padding:0;
+    margin:0;
+}
+/* end */
+/* корректировка выравнивания шапки */
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    padding-top:50px;
+    letter-spacing: 0.3px;
+}
+/* конец здесь */
+/* корректировка самой шапки */
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style-type: none;
+    margin-right: 40px;
+    transition: all .15s ease;
+}
+.menu li:hover {
+    transform: scale(1.05);
+}
+.menu li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+}
+header a {
+    color: #fff;
+}
+/* где-то здесь конец */
+/* логотип, э-кей, Мой профиль */
+.logotip {
+    text-decoration:none;
+    font-size:30px;
+    margin-right:490px;
+    margin-left:60px;
+    transition: all .15s ease;
+}
+.logo {
+    text-decoration:none;
+}
+.logotip:hover {
+    transform: scale(0.97);
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+    position:absolute;
+    margin-top: 130px;
+    left: 400px;
+    box-shadow: 0px 5px 0px rgb(255 255 255);
+}
+
+.png_2 {
+    position: absolute;
+    left:11px;
+    margin-top:55px;
+    width:50px;
+    height:50px;
+    transition: all .32s ease;
+}
+
+.png_2:hover {
+    transform: scale(1.03);
+}
+
+.png_3 {
+    position:absolute;
+    left:353px;
+    width:50px;
+    height:50px;
+    margin-top:55px;
+    transition: all .32s ease;
+}
+
+.png_3:hover {
+    transform: scale(1.03);
+}
+
+.jpg {
+    width: 30%;
+    position:absolute;
+    right:0px;
+    width: 600px;
+    height:400px;
+    margin-top:140px;
+    border-radius: 15px 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+}
+.png {
+    width: 106px;
+    height: 68px;
+    position: absolute;
+    right: 415px;
+    margin-top:110px;
+}
+
+/* доработать эту часть */
+.double {
+    display:flex;
+    color: black;
+    position: absolute;
+    left:510px;
+    width: 600px;
+    height:300px;
+    margin-top:300px;
+
+}
+.double_one{
+    margin-right: 50px;
+    box-shadow:10px -4.8px 10px 10px black;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
+    padding:20px;
+}
+
+.double h1 {
+    font-family: 'Manrope';
+    margin-top: 40px;
+    letter-spacing: 0.3px;
+    line-height: 35px;
+}
+
+.double_one h1 {
+    margin-left:45px;
+}
+
+.double_two h1 {
+    margin-left: 50px;
+}
+
+.double h2 {
+    font-family: 'Manrope';
+    font-size: 14px;
+    margin-top:20px;
+    color: #525454;
+}
+.double_two {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
+    background: #fff;
+    border-radius: 15px;
+    padding:20px;
+
+}
+.btn_1 {
+    color:black;
+    text-decoration:none;
+    position:absolute;
+    left:70px;
+    margin-top: 40px;
+    background: linear-gradient(#37aded, #37aded);
+    width: 132px;
+    height:40px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:10px;
+    transition: all .22s ease;
+}
+
+.btn_1:hover {
+    transform: scale(0.97);
+}
+
+.btn_2 {
+    color:black;
+    text-decoration:none;
+    position:absolute;
+    left:372px;
+    margin-top: 56px;
+    background: linear-gradient(#3ed9de, #37c3ed);
+    width: 200px;
+    height:40px;
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    border-radius:10px;
+    transition: all .22s ease;
+}
+
+.btn_2:hover {
+    transform: scale(0.97);
+}
+
+.jpg_2 {
+    position:absolute;
+    width:610px;
+    height:350px;
+    margin-top: 425px;
+    box-shadow: 10px -8px 0px rgb(28, 102, 237);
+    border-radius:5px;
+}
+
+
+/* до сюда */

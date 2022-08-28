@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/detail_view.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Poppins&family=Roboto&display=swap&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title>Новости</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logotip">
+                <a class="logo" href="{% url 'about' %}">Мой профиль</a>
+            </div>
+        </div>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li>
+                    <a href="{% url 'news' %}">Новости</a>
+                </li>
+                <li>
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Домашняя страница</a>
+                </li>
+            </ul>
+        </div>
+</header>
+<section class="section">
+    <div class="basic_info">
+            <div class="basic_title">
+                <h1>{{article.title}}</h1>
+            </div>
+            <div class="basic_text">
+                <h3>{{article.text|linebreaks}}</h3>
+            </div>
+            {% if article.photo %}
+                <p class="jpg"><img src="{{ article.photo.url }}" width="350" height="300"></p>
+            {% endif %}
+            <div class="basic_date">
+                <h3>{{article.date}}</h3>
+            </div>
+        </div>
+</section>
+</body>
+</html>

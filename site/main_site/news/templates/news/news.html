@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/news.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Poppins&family=Roboto&display=swap&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title>Новости</title>
+</head>
+<body>
+<img class="jpg" src="{% static 'main/img/blue_background.jpg' %}">
+<img class="i_am" src="{% static 'main/img/i_am_2.png' %}">
+<img class="png_1" src="{% static 'main/img/Tik-tik.png' %}">
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logotip">
+                <a class="logo" href="{% url 'about' %}">Мой профиль</a>
+            </div>
+        </div>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li>
+                    <a href="{% url 'news' %}">Новости</a>
+                </li>
+                <li>
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Домашняя страница</a>
+                </li>
+            </ul>
+             <form class="search" action="{% url 'news' %}" method="get">
+                 <input class="search_input" name="search" type="search" placeholder="Поиск по новостям:">
+                 <button class="button" type="submit">🔎</button>
+             </form>
+        </div>
+</header>
+<section class="section">
+    {% if news %}
+        {% for el in news %}
+            <div class="basic_info">
+                <div class="basic_title">
+                    <h1>{{el.title}}</h1>
+                </div>
+                <div class="basic_anons">
+                    <h2>{{el.anons}}</h2>
+                </div>
+                <a href="{% url 'news-detail' el.id %}" class="btn">Смотреть полностью!</a>
+            </div>
+        {% endfor %}
+    {% else %}
+    <div class="no_records">
+        <h1>По вашему запросу ничего не найдено  ●︿●</h1>
+    </div>
+    {% endif %}
+</section>
+</body>
+</html>

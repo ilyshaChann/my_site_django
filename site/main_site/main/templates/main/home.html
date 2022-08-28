@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<img class="png" src="{% static 'main/img/Tik-tik.png' %}" alt="hello">
+<img class="png_1" src="{% static 'main/img/Titik-titik.png' %}" alt="hello">
+<img class="png_2" src="{% static 'main/img/Titik-titik.png' %}" alt="hello">
+<img class="img" src="{% static 'main/img/hello_world_2.jpg' %}" alt="hello">
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logotip">
+                <a class="logo" href="{% url 'about' %}">Мой профиль</a>
+            </div>
+        </div>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li>
+                    <a href="{% url 'news' %}">Новости</a>
+                </li>
+                <li>
+                    <a href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">Домашняя страница</a>
+                </li>
+            </ul>
+    </div>
+        <div class="other_text">
+            <h1>Информационная страница</h1>
+            <h2>Привет, меня зовут Илья, я начинающий Python программист.
+            На данном сайте я хотел бы предоставить информацию о себе,
+            а также познакомить вас со своими успехами в работе программиста. Приятного просмотра!</h2>
+            <a class="btn" href="{% url 'news' %}">Приступим!</a>
+        </div>
+</header>
+<section class="section">
+    <img class="png_3" src="{% static 'main/img/computer.png' %}" alt="hello">
+    <img class="png_4" src="{% static 'main/img/computer.png' %}" alt="hello">
+    <img class="png_5" src="{% static 'main/img/computer.png' %}" alt="hello">
+    <img class="png_6" src="{% static 'main/img/computer.png' %}" alt="hello">
+    <div class="container">
+        <div class="basic_text">
+            <h1>Здесь я познакомлю вас со своими достижениями в области программирования!</h1>
+            <h2>Tак как я начинал с языка программирования - Python,
+            то после пары-тройки практических уроков, я приступил к написанию собственных программ!</h2>
+            <a class="btn_2" href="{% url 'about' %}">Поехали!</a>
+        </div>
+    </div>
+    <div class="minor_part">
+        <div class="minor_part_one">
+            <div class="minor_part_1">
+                <h1>Телеграм бот</h1>
+                <h2>Мне удалось написать телеграм бота, способного опредялть погоду
+                    практически в любой точке земли!</h2>
+            </div>
+                <div class="minor_part_2">
+                    <h1>Распознование текста</h1>
+                    <h2>Скрипт, позволяющий распознать изображение с текстом, не являющеюся документом (работает, не всегда корректно, но для простеньких текстов подойдет).</h2>
+                </div>
+        </div>
+        <div class="minor_part_two">
+            <div class="minor_part_3">
+                <h1>Голосовой помощник</h1>
+                <h2>Благодаря специальным библиотекам, мне удалось создать голосового ассистента,
+                    помогающего мне выполнять различные повседневные, рутинные действия и задачи.</h2>
+            </div>
+            <div class="minor_part_4">
+                <h1>Фреймворк - Django</h1>
+                <h2>И наконец, спустя некоторое время практики и изучения основ языка - Python,
+                    я приступил к знакомству с замечательным фреймворком - Django и написал парочку простеньких веб-сайтов.</h2>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
